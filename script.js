@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("0oPHryVmZkRyncR9C");
+  emailjs.init("SwX-eMFK3kaTQLpbj");
 })();
 
 document.getElementById("breakdownForm").addEventListener("submit", function (e) {
@@ -33,7 +33,7 @@ document.getElementById("breakdownForm").addEventListener("submit", function (e)
             location: locationName || `Lat: ${latitude}, Lon: ${longitude}`
           };
 
-          emailjs.send("service_tyr7ewf", "template_x0pcdzo", formData)
+          emailjs.send("service_1g7491g", "template_avh6z0n", formData)
             .then(() => {
               alert("Breakdown alert sent successfully!");
               document.getElementById("breakdownForm").reset();
