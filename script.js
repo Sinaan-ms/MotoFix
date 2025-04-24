@@ -33,7 +33,7 @@ document.getElementById("breakdownForm").addEventListener("submit", function (e)
             location: locationName || `Lat: ${latitude}, Lon: ${longitude}`
           };
 
-          emailjs.send("service_1g7491g", "template_avh6z0n", formData)
+          emailjs.send("service_1g7491g", "template_fszkkpd", formData)
             .then(() => {
               alert("Breakdown alert sent successfully!");
               document.getElementById("breakdownForm").reset();
