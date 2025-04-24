@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Breakdown Assist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="MotoFix1.png" alt="MotoFix Logo" class="logo" />
+      <p>Your roadside rescue partner — quickly notify mechanics in case of trouble.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Send a Breakdown Alert</h2>
+    <form id="breakdownForm">
+      <div class="input-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="input-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required />
+      </div>
+      <div class="input-group">
+        <label for="carNumber">Car Number</label>
+        <input type="text" id="carNumber" name="carNumber" required style="text-transform: uppercase;" />
+      </div>
+      <div class="input-group">
+        <label for="carType">Car Type</label>
+        <input type="text" id="carType" name="carType" required />
+      </div>
+      <div class="input-group">
+        <label for="dateTime">Date & Time</label>
+        <input type="datetime-local" id="dateTime" name="dateTime" required />
+      </div>
+      <div class="input-group">
+        <label for="issue">Issue Description</label>
+        <textarea id="issue" name="issue" rows="4" required></textarea>
+      </div>
+      <button type="submit"> Send Alert</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
